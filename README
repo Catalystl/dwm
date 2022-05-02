@@ -1,3 +1,26 @@
+My Changes
+------------
+
+I added functions for fullscreening the focused window and toggling the 
+border of windows. I added border toggling because existing patches for 
+removing borders like "noborder" seemed buggy and were only meant
+for removing the border of windows when there was only one on screen.
+
+Bindings (META key is Alt):
+
+META + X = close window (x out)
+META + E = fullscreen focused window (enlarge)
+META + N = toggle window border (no border)
+META + C = open "urxvt" terminal (command line)
+META + A = open "pavucontrol" (audio volume sliders)
+META + Z = open "pcmanfm" file manager (zearch filesystem)
+
+Below is the original dwm readme:
+
+
+
+
+
 dwm - dynamic window manager
 ============================
 dwm is an extremely fast, small, and dynamic window manager for X.

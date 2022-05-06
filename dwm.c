@@ -2079,6 +2079,9 @@ toggleborder(const Arg *arg)
 void
 keyfullscreen(const Arg *arg)
 {
+	if (!selmon->sel)
+		return;
+	
 	setfullscreen(selmon->sel, !(selmon->sel->isfullscreen));
 }
 
